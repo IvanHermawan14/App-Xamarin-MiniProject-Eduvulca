@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduVulca.Informasi">
+    
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout>
+                    <Frame Grid.Column="0" BackgroundColor="White">
+                        <StackLayout>
+                            <Label Text="Hal-hal yang harus dilakukan sebelum terjadinya bencana gunung meletus" 
+                                   TextColor="Black" HorizontalTextAlignment="Center" FontSize="Large"/>
+                            <Image Source="pra.png"/>
+                            <Editor Text="Sebelum terjadi letusan, terdapat lima langkah siaga yang perlu diambil. Pertama, penting untuk mengetahui jalur evakuasi yang telah ditetapkan. Hal ini akan membantu kita untuk segera meninggalkan area yang berpotensi terkena dampak letusan dengan cepat dan aman. Selanjutnya, sediakan masker dan kacamata pelindung untuk melindungi saluran pernapasan dan mata dari abu vulkanik yang dapat membahayakan kesehatan. Ketiga, kita harus mengetahui bahaya-bahaya yang mungkin ada di sekitar rumah, seperti lahar, aliran piroklastik, atau material vulkanik yang jatuh. Keempat, perhatikan arahan yang diberikan oleh pemerintah atau lembaga terkait mengenai tindakan yang perlu diambil dalam situasi letusan. Terakhir, pastikan kita memiliki perlengkapan siaga bencana yang cukup, seperti peralatan darurat, makanan, air bersih, dan obat-obatan. Dengan mengikuti langkah-langkah siaga ini, kita dapat meningkatkan keselamatan dan kesiapan kita dalam menghadapi letusan vulkanik."
+                                   TextColor="Black" IsReadOnly="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+                        </StackLayout>
+                    </Frame>
+                    <Frame Grid.Column="1" BackgroundColor="White">
+                        <StackLayout>
+                            <Label Text="Hal-hal yang harus dilakukan saat terjadinya bencana gunung meletus" 
+                                   TextColor="Black" HorizontalTextAlignment="Center" FontSize="Large"/>
+                            <Image Source="saat.png"/>
+                            <Editor Text="Saat terjadi letusan gunung api, ada enam langkah penting yang harus diikuti. Pertama, segera mengungsi dari area yang berpotensi terkena dampak letusan. Kedua, hindari berada di tempat terbuka yang dapat terkena hujan abu dan material vulkanik. Ketiga, kenakan pakaian tertutup untuk melindungi tubuh dari kontak langsung dengan abu vulkanik yang dapat menyebabkan iritasi. Keempat, penting untuk selalu mengikuti arahan dan petunjuk dari petugas yang berwenang agar dapat mengambil langkah-langkah yang tepat dan aman. Kelima, hindari memakai lensa kontak karena abu vulkanik dapat menyebabkan iritasi mata yang parah. Terakhir, gunakan masker atau kain basah untuk melindungi saluran pernapasan dan mencegah masuknya abu vulkanik ke dalam tubuh."
+                                    TextColor="Black" IsReadOnly="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Grid.Column="2" BackgroundColor="White">
+                        <StackLayout>
+                            <Label Text="Hal-hal yang harus dilakukan setelah terjadinya bencana gunung meletus" 
+                                   TextColor="Black" HorizontalTextAlignment="Center" FontSize="Large"/>
+                            <Image Source="pra.png"/>
+                            <Editor Text="Setelah terjadi letusan gunung api, ada lima langkah penting yang perlu diambil. Pertama, memastikan kebutuhan dasar seperti makanan, air, tempat tinggal, dan keamanan terpenuhi untuk menjaga kesejahteraan diri dan keluarga. Kedua, memperhatikan perkembangan informasi terbaru dari sumber yang dapat dipercaya, seperti otoritas lokal atau media resmi, untuk mengetahui situasi terkini dan arahan evakuasi jika diperlukan. Ketiga, tetap waspada terhadap kemungkinan letusan lanjutan atau bahaya sekunder, seperti aliran lava, lahar, atau gas beracun, dan segera mengambil langkah-langkah pencegahan yang diperlukan. Keempat, mengurangi terpapar abu vulkanik dengan menggunakan masker atau perlindungan pernapasan, serta menjaga agar abu tidak masuk ke dalam rumah atau bangunan dengan menutup jendela dan ventilasi. Terakhir, membersihkan atap dari debu vulkanik yang bisa menumpuk dan menimbulkan beban berlebih, dengan cara menyapu atau membersihkannya agar tidak menyebabkan kerusakan atau kejatuhan yang berbahaya."
+                                TextColor="Black" IsReadOnly="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame Grid.Column="3" BackgroundColor="White">
+                        <StackLayout>
+                            <Label Text="Fun Fact Gunung Berapi di Indonesia" 
+                                   TextColor="Black" HorizontalTextAlignment="Center" FontSize="Large"/>
+                            <Image Source="fact.png"/>
+                            <Editor Text="Indonesia memiliki sejarah yang menarik mengenai beberapa gunung berapi aktif. Salah satunya adalah kisah Mbah Maridjan, seorang abdi dalem yang sangat dihormati di Gunung Merapi, Jawa Tengah. Ia terkenal karena keberaniannya tinggal di dekat gunung yang memiliki risiko letusan tinggi, dan ia memimpin upacara adat serta memberikan nasihat spiritual kepada penduduk setempat. Kemudian, Gunung Krakatau yang terletak di Selat Sunda, menjadi terkenal karena letusannya pada tahun 1883 yang menghancurkan pulau-pulau di sekitarnya dan menciptakan tsunami dahsyat. Fenomena bulan Krakatau juga terjadi akibat debu vulkanik yang menyebabkan penurunan cahaya matahari secara drastis. Di Jawa Timur, Gunung Bromo dikenal dengan tradisi unik bernama Joggring Saloka, di mana masyarakat setempat mengadakan upacara sebagai ungkapan rasa syukur dan permohonan keselamatan kepada gunung yang dianggap sebagai tempat tinggal para dewa. Gunung Rinjani di Pulau Lombok memiliki Danau Segara Anak yang merupakan danau vulkanik terbesar di Indonesia, menawarkan pemandangan alam yang menakjubkan dengan puncak gunung yang tinggi mengelilingi danau. Terakhir, Gunung Ijen terkenal dengan fenomena api biru di kawahnya yang dihasilkan oleh gas belerang yang terbakar, memberikan pemandangan spektakuler yang menarik minat pengunjung. Semua fakta ini menambah kekayaan sejarah dan keindahan alam Indonesia yang unik."
+                                    TextColor="Black" IsReadOnly="True" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

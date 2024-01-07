@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduVulca.RegisterPage"
+             BackgroundImageSource="background.png">
+
+    <ContentPage.Content>
+        <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#343232" Opacity="0.8">
+            <Label Text="Masukkan Data Diri Anda" FontSize="Large"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" TextColor="Crimson"/>
+            <StackLayout>
+                <Entry Placeholder="Masukkan Username" Keyboard="Text" x:Name="T_user"/>
+                <Entry Placeholder="Masukkan Email" Keyboard="Email" x:Name="T_email"/>
+                <Entry Placeholder="Masukkan Password" IsPassword="True" x:Name="T_password"/>
+                <Button Text="Daftar" TextColor="Crimson" x:Name="Daftar" Clicked="DaftarButtonClicked" BackgroundColor="#343232"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

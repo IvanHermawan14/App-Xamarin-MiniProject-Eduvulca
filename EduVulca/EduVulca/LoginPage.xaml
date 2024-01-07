@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduVulca.LoginPage"
+             BackgroundImageSource="background.png">
+    
+    <ContentPage.Content>
+
+        <StackLayout Padding="30" VerticalOptions="Center" HorizontalOptions="FillAndExpand" BackgroundColor="#343232" Opacity="0.8">
+            
+            <StackLayout>
+                <Label Text="Masukkan Username dan Password" FontSize="Large" 
+                VerticalOptions="CenterAndExpand" HorizontalTextAlignment="Center" 
+                HorizontalOptions="CenterAndExpand" TextColor="Crimson" VerticalTextAlignment="Center"/>
+                <StackLayout>
+                    <Entry Placeholder="Masukkan Email" Keyboard="Email" x:Name="T_email"/>
+                    <Entry Placeholder="Masukkan Password" IsPassword="True" x:Name="T_pass"/>
+                    <Button Text="Log In" TextColor="Crimson" Clicked="LoginButtonClicked" BorderWidth="1.5" CornerRadius="50" BackgroundColor="Transparent" x:Name="login"/>
+                </StackLayout>
+            </StackLayout>
+            
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

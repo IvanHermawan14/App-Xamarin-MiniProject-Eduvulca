@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduVulca.HomePage"
+             BackgroundImageSource="background.png">
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="logo.png" HorizontalOptions="Center" HeightRequest="180" WidthRequest="180"/>
+            <Frame Background="#343232" Padding="27" CornerRadius="0">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Pusat Informasi dan Edukasi Bencana Gunung Berapi di Indonesia" HorizontalTextAlignment="Center" LineBreakMode="WordWrap"
+                      TextColor="White" FontSize="25" FontAttributes="Bold"/>
+                </StackLayout>
+
+            </Frame>
+            <Frame>
+                <TableView Intent="Settings">
+
+                    <TableRoot>
+                        <TableSection Title="WELCOME" TextColor="Black">
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Button Text="Log in" TextColor="Crimson" FontSize="Subtitle"  Clicked="LoginButtonClicked" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Button Text="Registrasi" TextColor="Crimson" FontSize="Subtitle" Clicked="RegisterButtonClicked" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Button Text="About Us" TextColor="Crimson" FontSize="Subtitle" Clicked="InfoButtonClicked" BackgroundColor="Transparent" HorizontalOptions="CenterAndExpand"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </TableSection>
+                    </TableRoot>
+                </TableView>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

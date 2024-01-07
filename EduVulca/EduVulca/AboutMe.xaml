@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduVulca.AboutMe"
+             BackgroundColor="DeepSkyBlue">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="Center">
+                <Frame>
+                    <StackLayout>
+                        <Label Text="About Us" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                        <Image Source="logoits.png" HorizontalOptions="CenterAndExpand"/>
+                        <Image Source="inst.png" HorizontalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Nama :Yudi Wirawan" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="NRP : 2042221114" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="Kelas : C" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Nama : Muhammad Ivan Hermawan" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="NRP : 2042221096" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="Kelas : C" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Nama : Yasmine Yuliana Salim" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="NRP : 2042221062" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="Kelas : B" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Nama : Gistyanti Alvira Terre Zahran" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="NRP : 2042221052" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="Kelas : B" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Nama : Muhammad Rama" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="NRP : 2042221063" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="Kelas : A" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Nama : Farhan Adzlin Mushaf" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="NRP : 2042221001" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="Kelas : A" FontSize="18" HorizontalTextAlignment="Center" TextColor="Black"/>
+                    </StackLayout>
+                </Frame>
+                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

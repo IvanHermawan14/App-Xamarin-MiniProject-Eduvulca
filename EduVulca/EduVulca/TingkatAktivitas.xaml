@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EduVulca.TingkatAktivitas">
+    
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackLayout Grid.Row="0">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Label Grid.Row="0" Text="Tingkat Aktivitas Gunung Api" TextColor="Crimson" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" Margin="15"/>
+                        <Grid Grid.Row="1">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Frame Grid.Column="0">
+                                <StackLayout>
+                                    <Image Source="awas.png" WidthRequest="50"/>
+                                    <Label Text="LEVEL IV AWAS" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                                    <StackLayout>
+                                        <Label Text="Jumlah : 0" TextColor="Black" HorizontalOptions="Center" />
+                                    </StackLayout>
+                                    <Button Text="INFO" Clicked="ButtonClicked" HorizontalOptions="Center" />
+                                    <Label Text="Ancaman bahaya erupsi dapat meluas dan mengancam pemukiman penduduk" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame Grid.Column="1">
+                                <StackLayout>
+                                    <Image Source="siaga.png" WidthRequest="50"/>
+                                    <Label Text="LEVEL III SIAGA" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                                    <StackLayout>
+                                        <Label Text="Jumlah : 4" TextColor="Black" HorizontalOptions="Center" />
+                                    </StackLayout>
+                                    <Button Text="INFO" Clicked="ButtonClicked" HorizontalOptions="Center" />
+                                    <Label Text="Ancaman Bahaya berupa erupsi bisa meluas tetapi tidak mengancam pemukiman" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                        <Grid Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Frame Grid.Column="0" >
+                                <StackLayout>
+                                    <Image Source="waspada.png" WidthRequest="50"/>
+                                    <Label Text="LEVEL II WASPADA" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                                    <StackLayout>
+                                        <Label Text="Jumlah : 16" TextColor="Black" HorizontalOptions="Center" />
+                                    </StackLayout>
+                                    <Button Text="INFO" Clicked="ButtonClicked" HorizontalOptions="Center" />
+                                    <Label Text="Ancaman bahaya di sekitar kawah" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+                            <Frame Grid.Column="1">
+                                <StackLayout>
+                                    <Image Source="normal.png" WidthRequest="50"/>
+                                    <Label Text="LEVEL I NORMAL" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                                    <StackLayout>
+                                        <Label Text="Jumlah : 48" TextColor="Black" HorizontalOptions="Center" />
+                                    </StackLayout>
+                                    <Button Text="INFO" Clicked="ButtonClicked" HorizontalOptions="Center" />
+                                    <Label Text="Ancaman bahaya berupa gas beracun di sekitar kawah (pada gunung api tertentu)" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </Grid>
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" Margin="0, 10">
+                    <Frame>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+
+                            <Label Text="Parameter Tingkat Aktivitas Gunung Berapi di Indonesia"
+                           Grid.Row="0" 
+                           Grid.Column="0" 
+                           Grid.ColumnSpan="4"
+                           HorizontalTextAlignment="Center"
+                           FontAttributes="Bold" FontSize="Large" TextColor="Crimson" Margin="15"/>
+
+                            <Label Text="Level" Grid.Row="1" Grid.Column="0" FontAttributes="Bold" Padding="5, 0" TextColor="Black"/>
+                            <Label Text="Keterangan" Grid.Row="1" Grid.Column="1" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="Parameter" Grid.Row="1" Grid.Column="2" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="Keadaan Visual" Grid.Row="1" Grid.Column="3" FontAttributes="Bold" TextColor="Black"/>
+
+                            <Label Text="Level I" Grid.Row="2" Grid.Column="0" Padding="5" TextColor="Black"/>
+                            <Label Text="Normal" Grid.Row="2" Grid.Column="1" Padding="5" TextColor="Black"/>
+                            <Label Text="Tidak ada aktivitas yang mencurigakan" Grid.Row="2" Grid.Column="2" Padding="5" TextColor="Black"/>
+                            <Label Text="Tidak ada asap atau aktivitas visual lainnya" Grid.Row="2" Grid.Column="3" Padding="5" TextColor="Black"/>
+
+                            <Label Text="Level II" Grid.Row="3" Grid.Column="0" Padding="5" TextColor="Black"/>
+                            <Label Text="Waspada" Grid.Row="3" Grid.Column="1" Padding="5" TextColor="Black"/>
+                            <Label Text="Adanya peningkatan aktivitas vulkanik, perlu waspada" Grid.Row="3" Grid.Column="2" Padding="5" TextColor="Black"/>
+                            <Label Text="Munculnya asap ringan atau peningkatan aktivitas visual" Grid.Row="3" Grid.Column="3" Padding="5" TextColor="Black"/>
+
+                            <Label Text="Level III" Grid.Row="4" Grid.Column="0" Padding="5" TextColor="Black"/>
+                            <Label Text="Siaga" Grid.Row="4" Grid.Column="1" Padding="5" TextColor="Black"/>
+                            <Label Text="Adanya peningkatan aktivitas vulkanik, potensi erupsi meningkat" Grid.Row="4" Grid.Column="2" Padding="5" TextColor="Black"/>
+                            <Label Text="Munculnya asap tebal atau aktivitas visual yang signifikan" Grid.Row="4" Grid.Column="3" Padding="5" TextColor="Black"/>
+
+                            <Label Text="Level IV" Grid.Row="5" Grid.Column="0" Padding="5" TextColor="Black"/>
+                            <Label Text="Awas" Grid.Row="5" Grid.Column="1" Padding="5" TextColor="Black"/>
+                            <Label Text="Adanya aktivitas vulkanik yang berbahaya, erupsi sedang berlangsung atau sangat mungkin terjadi" Grid.Row="5" Grid.Column="2" Padding="5"  TextColor="Black"/>
+                            <Label Text="Erupsi sedang berlangsung atau aktivitas visual yang sangat signifikan" Grid.Row="5" Grid.Column="3" Padding="5" TextColor="Black"/>
+                        </Grid>
+                    </Frame>
+                    
+                </StackLayout>
+
+                <Grid Grid.Row="2">
+                    <StackLayout>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Label Grid.Row="0" Text=" Data Tingkat Aktivitas Gunung Api di Indonesia" TextColor="Crimson" FontSize="Large" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="15"/>
+                            <StackLayout Grid.Row="1">
+                                <Frame CornerRadius="10" BorderColor="Gray" BackgroundColor="White">
+                                    <StackLayout>
+                                        <Label Text="LEVEL IV AWAS" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+                                        <Label Text="Jumlah : 0" TextColor="Black" HorizontalOptions="Center" />
+
+                                        <Label Text="Tidak Ada" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout Grid.Row="2">
+                                <Frame CornerRadius="10" BorderColor="Gray" BackgroundColor="White">
+                                    <StackLayout>
+
+                                        <Label Text="LEVEL III SIAGA" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+                                        <Label Text="Jumlah : 4" TextColor="Black" HorizontalOptions="Center" />
+
+
+                                        <Label Text="Anak Krakatau - Lampung" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Karangetang - Sulawesi Utara" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Merapi - Daerah Istimewa Yogyakarta dan Jawa Tengah" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Semeru - Jawa Timur" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout Grid.Row="3">
+                                <Frame CornerRadius="10" BorderColor="Gray" BackgroundColor="White">
+                                    <StackLayout>
+                                        <Label Text="LEVEL II WASPADA" TextColor="Black" FontSize="Medium" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+
+                                        <Label Text="Jumlah : 17" TextColor="Black" HorizontalOptions="Center" />
+
+                                        <Label Text="Awu - Sulawesi Utara" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Banda Api - Maluku" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Bromo - Jawa Timur" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Dempo - Sumatera Selatan" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Dukono - Maluku Utara" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Gamalama - Maluku Utara" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ibu - Maluku Utara" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ijen - Jawa Timur" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ili Lewotolok - Nusa Tenggara Timur" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Kerinci - Jambi, Sumatera Barat" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Lokon - Sulawesi Utara" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Marapi - Sumatera Barat" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Raung - Jawa Timur" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Rinjani - Nusa Tenggara Barat" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Sangeangapi - Nusa Tenggara Barat" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Sinabung - Sumatera Utara" HorizontalOptions="Center" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+                            <StackLayout Grid.Row="4">
+                                <Frame CornerRadius="10" BorderColor="Gray" BackgroundColor="White" >
+                                    <StackLayout>
+
+                                        <Label Text="LEVEL I NORMAL" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Center"/>
+
+                                        <Label Text="Jumlah : 47" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+
+                                        <Label Text="Agung - Bali" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ambang - Sulawesi Utara" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Anak Ranakah - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Arjuno Welirang - Jawa Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Batur - Bali" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Batutara - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Bur Ni Telong - Aceh" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ciremai - Jawa Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Colo - Sulawesi Tengah" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Dieng - Jawa Tengah" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ebulobo - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Egon - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Galunggung - Jawa Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Gamkonora - Maluku Utara" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Gede - Jawa Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Guntur - Jawa Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ile Werung - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ili Boleng - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Inielika - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Inierie - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Iya - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Kaba - Bengkulu" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Kelimutu - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Kelud - Jawa Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Kie Besi - Maluku Utara" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Lamongan - Jawa Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Lereboleng - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Lewotobi Laki-laki - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Lewotobi Perempuan" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Mahawu - Sulawesi Utara" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Papandayan - Jawa Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Peut Sague - Daerah Istimewa Aceh" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Rokatenda - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Ruang - Sulawesi Utara" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Salak - Jawa Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Seulawah Agam - Daerah Istimewa Aceh" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Sirung - Nusa Tenggara Timur" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Slamet - Jawa Tengah" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Sorikmarapi - Sumatera Utara" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Sumbing - Jawa Tengah" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Sundoro - Jawa Tengah" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Talang - Sumatera Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Tambora - Nusa Tenggara Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Tandikat - Sumatera Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Tangkoko - Sulawesi Utara" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Tangkuban Parahu - Jawa Barat" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                        <Label Text="Wurlali - Maluku" TextColor="Black" HorizontalTextAlignment="Center"/>
+                                    </StackLayout>
+                                </Frame>
+                            </StackLayout>
+
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+
+            </Grid>
+                
+                
+        </ScrollView>
+
+    </ContentPage.Content>
+    
+</ContentPage>
